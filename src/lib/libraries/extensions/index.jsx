@@ -1,6 +1,9 @@
 import React from 'react';
 import {FormattedMessage} from 'react-intl';
 
+import faceDetectionIconURL from './faceDetection/faceDetection.png';
+import faceDetectionInsetIconURL from './faceDetection/faceDetection-small.svg';
+
 import musicIconURL from './music/music.png';
 import musicInsetIconURL from './music/music-small.svg';
 
@@ -47,6 +50,26 @@ import gdxforConnectionIconURL from './gdxfor/gdxfor-illustration.svg';
 import gdxforConnectionSmallIconURL from './gdxfor/gdxfor-small.svg';
 
 export default [
+    {
+        name: (
+            <FormattedMessage
+                defaultMessage="Face Detection"
+                description="Name for the extension"
+                id="gui.extension.faceDetection.name"
+            />
+        ),
+        extensionId: 'faceDetection',
+        iconURL: faceDetectionIconURL,
+        insetIconURL: faceDetectionInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="Detect Faces using AI"
+                description="Description for the extension"
+                id="gui.extension.faceDetection.description"
+            />
+        ),
+        featured: true
+    },
     {
         name: (
             <FormattedMessage
